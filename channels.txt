@@ -1,3 +1,14 @@
+Atom Sport TV#BEIN SPORTS 1#https://white-sky-0cce.burdayimburdasizde.workers.dev/https://corestream.ronaldovurdu.help//hls/s-sport.m3u8
+Atom Sport TV#BEIN SPORTS 2#https://white-sky-0cce.burdayimburdasizde.workers.dev/https://corestream.ronaldovurdu.help//hls/bein-sports-2.m3u8
+Atom Sport TV#BEIN SPORTS 3#https://white-sky-0cce.burdayimburdasizde.workers.dev/https://corestream.ronaldovurdu.help//hls/bein-sports-3.m3u8
+Atom Sport TV#BEIN SPORTS 4#https://white-sky-0cce.burdayimburdasizde.workers.dev/https://corestream.ronaldovurdu.help//hls/bein-sports-4.m3u8
+Atom Sport TV#S SPORT 2#https://white-sky-0cce.burdayimburdasizde.workers.dev/https://corestream.ronaldovurdu.help//hls/s-sport-2.m3u8
+Atom Sport TV#S SPORT#https://white-sky-0cce.burdayimburdasizde.workers.dev/https://corestream.ronaldovurdu.help//hls/s-sport.m3u8
+Atom Sport TV#TİVİBU SPOR 1#https://white-sky-0cce.burdayimburdasizde.workers.dev/https://corestream.ronaldovurdu.help//hls/tivibu-spor-1.m3u8
+Atom Sport TV#TİVİBU SPOR 2#https://white-sky-0cce.burdayimburdasizde.workers.dev/https://corestream.ronaldovurdu.help//hls/tivibu-spor-2.m3u8
+Atom Sport TV#TİVİBU SPOR 3#https://white-sky-0cce.burdayimburdasizde.workers.dev/https://corestream.ronaldovurdu.help//hls/tivibu-spor-3.m3u8
+Atom Sport TV#TRT SPOR#https://white-sky-0cce.burdayimburdasizde.workers.dev/https://corestream.ronaldovurdu.help//hls/trt-spor.m3u8
+
 ColaTV#BLV 247#https://live5.msrktz.app/live/90865415.m3u8
 ColaTV#BLV 7UP#https://live5.msrktz.app/live/78905744.m3u8
 ColaTV#BLV AQUA#https://live5.msrktz.app/live/18812304.m3u8
@@ -22,38 +33,38 @@ ColaTV#BLV SODA#https://live5.msrktz.app/live/02456966.m3u8
 ColaTV#BLV SPRITE#https://live5.msrktz.app/live/90725470.m3u8
 ColaTV#BLV STING#https://live5.msrktz.app/live/14707124.m3u8
 
-NexaTV#beIN Sport 1 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/receptestt.m3u8
-NexaTV#beIN Sport 2 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs2.m3u8
-NexaTV#beIN Sport 3 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs3.m3u8
-NexaTV#beIN Sport 4 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs4.m3u8
-NexaTV#beIN Sport 5 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs5.m3u8
-NexaTV#beIN Sport Max 1 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebsm1.m3u8
-NexaTV#beIN Sport Max 2 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebsm2.m3u8
-NexaTV#Euro Sport 1 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivees1.m3u8
-NexaTV#Euro Sport 2 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivees2.m3u8
-NexaTV#Exxen 1 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn1.m3u8
-NexaTV#Exxen 2 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn2.m3u8
-NexaTV#Exxen 3 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn3.m3u8
-NexaTV#Exxen 4 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn4.m3u8
-NexaTV#Exxen 5 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn5.m3u8
-NexaTV#Exxen 6 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn6.m3u8
-NexaTV#Exxen 7 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn7.m3u8
-NexaTV#Exxen HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn.m3u8
-NexaTV#S Sport 1 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivess1.m3u8
-NexaTV#S Sport 2 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivess2.m3u8
-NexaTV#Smart Sport 1 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivesm1.m3u8
-NexaTV#Smart Sport 2 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivesm2.m3u8
-NexaTV#Tabii 1 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb1.m3u8
-NexaTV#Tabii 2 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb2.m3u8
-NexaTV#Tabii 3 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb3.m3u8
-NexaTV#Tabii 4 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb4.m3u8
-NexaTV#Tabii 5 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb5.m3u8
-NexaTV#Tabii 6 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb6.m3u8
-NexaTV#Tabii 7 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb7.m3u8
-NexaTV#Tabii 8 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb8.m3u8
-NexaTV#Tabii HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb.m3u8
-NexaTV#Tivibu Sport 1 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivets1.m3u8
-NexaTV#Tivibu Sport 2 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivets2.m3u8
-NexaTV#Tivibu Sport 3 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivets3.m3u8
-NexaTV#Tivibu Sport 4 HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivets4.m3u8
-NexaTV#Tivibu Sport HD#https://api.codetabs.com/v1/proxy/?quest=https://andro.okan11gote12sokan.cfd/checklist/androstreamlivets.m3u8
+NexaTV#beIN Sport 1 HD#https://andro.okan11gote12sokan.cfd/checklist/receptestt.m3u8
+NexaTV#beIN Sport 2 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs2.m3u8
+NexaTV#beIN Sport 3 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs3.m3u8
+NexaTV#beIN Sport 4 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs4.m3u8
+NexaTV#beIN Sport 5 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs5.m3u8
+NexaTV#beIN Sport Max 1 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebsm1.m3u8
+NexaTV#beIN Sport Max 2 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebsm2.m3u8
+NexaTV#Euro Sport 1 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivees1.m3u8
+NexaTV#Euro Sport 2 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivees2.m3u8
+NexaTV#Exxen 1 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn1.m3u8
+NexaTV#Exxen 2 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn2.m3u8
+NexaTV#Exxen 3 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn3.m3u8
+NexaTV#Exxen 4 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn4.m3u8
+NexaTV#Exxen 5 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn5.m3u8
+NexaTV#Exxen 6 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn6.m3u8
+NexaTV#Exxen 7 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn7.m3u8
+NexaTV#Exxen HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamliveexn.m3u8
+NexaTV#S Sport 1 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivess1.m3u8
+NexaTV#S Sport 2 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivess2.m3u8
+NexaTV#Smart Sport 1 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivesm1.m3u8
+NexaTV#Smart Sport 2 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivesm2.m3u8
+NexaTV#Tabii 1 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb1.m3u8
+NexaTV#Tabii 2 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb2.m3u8
+NexaTV#Tabii 3 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb3.m3u8
+NexaTV#Tabii 4 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb4.m3u8
+NexaTV#Tabii 5 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb5.m3u8
+NexaTV#Tabii 6 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb6.m3u8
+NexaTV#Tabii 7 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb7.m3u8
+NexaTV#Tabii 8 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb8.m3u8
+NexaTV#Tabii HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivetb.m3u8
+NexaTV#Tivibu Sport 1 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivets1.m3u8
+NexaTV#Tivibu Sport 2 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivets2.m3u8
+NexaTV#Tivibu Sport 3 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivets3.m3u8
+NexaTV#Tivibu Sport 4 HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivets4.m3u8
+NexaTV#Tivibu Sport HD#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivets.m3u8
