@@ -1,3 +1,38 @@
+Dens#Berita Satu#https://op-group1-densxvisionhd-1.dens.tv/h/h209/index.m3u8
+Dens#BN Channel#https://op-group1-densxvisionhd-1.dens.tv/h/h39/index.m3u8
+Dens#BTV#https://op-group1-densxvisionhd-1.dens.tv/h/h129/S4/mnf.m3u8
+Dens#CNA#https://op-group1-densxvisionhd-1.dens.tv/h/h29/index.m3u8
+Dens#Channel Jowo#https://op-group1-densxvisionhd-1.dens.tv/h/h77/index2.m3u8
+Dens#Crema TV#https://op-group1-densxvisionhd-1.dens.tv/h/h202/index.m3u8
+Dens#Dens Food Channel#https://op-group1-densxvisionhd-1.dens.tv/h/h221/index.m3u8
+Dens#Dens Food Channel#https://op-group1-densxvisionhd-1.dens.tv/h/h248/index.m3u8
+Dens#Dens Knowledge#https://op-group1-densxvisionhd-1.dens.tv/h/h236/index.m3u8
+Dens#Dens Life & Style#https://op-group1-densxvisionhd-1.dens.tv/h/h222/index.m3u8
+Dens#Dens Play#https://op-group1-densxvisionhd-1.dens.tv/h/h225/index.m3u8
+Dens#Dens Showbiz#https://op-group1-densxvisionhd-1.dens.tv/h/h203/index.m3u8
+Dens#Indosiar#https://op-group1-densxvisionhd-1.dens.tv/h/h235/index.m3u8
+Dens#Jak TV#https://op-group1-swiftservesd-1.dens.tv/s/s123/index2.m3u8
+Dens#Kompas TV#https://op-group1-densxvisionhd-1.dens.tv/h/h234/index.m3u8
+Dens#Kompas TV#https://op-group1-densxvisionhd-1.dens.tv/s/s104/index.m3u8
+Dens#Magna Channel#https://op-group1-densxvisionhd-1.dens.tv/h/h24/index.m3u8
+Dens#MDTV#https://op-group1-densxvisionhd-1.dens.tv/h/h223/index.m3u8
+Dens#MDTV#https://op-group1-swiftservesd-1.dens.tv/h/h06/index.m3u8
+Dens#Metro TV#https://op-group1-densxvisionhd-1.dens.tv/h/h12/index.m3u8
+Dens#Moji#https://op-group1-densxvisionhd-1.dens.tv/h/h207/index.m3u8
+Dens#Motorvision+#https://op-group1-densxvisionhd-1.dens.tv/h/h09/index.m3u8
+Dens#My Cinema Europe#https://op-group1-densxvisionhd-1.dens.tv/h/h18/index.m3u8
+Dens#NHK World#https://op-group1-densxvisionhd-1.dens.tv/h/h23/index.m3u8
+Dens#Nusantara TV#https://op-group1-densxvisionhd-1.dens.tv/h/h37/index.m3u8
+Dens#Phoenix InfoNews Channel#https://op-group1-densxvisionhd-1.dens.tv/s/s23/index.m3u8
+Dens#Qwest TV#https://op-group1-densxvisionhd-1.dens.tv/h/h153/index2.m3u8
+Dens#RTV#https://op-group1-densxvisionhd-1.dens.tv/h/h10/index.m3u8
+Dens#SCTV#https://op-group1-densxvisionhd-1.dens.tv/h/h217/index.m3u8
+Dens#Stingray Classica#https://op-group1-densxvisionhd-1.dens.tv/h/h229/index2.m3u8
+Dens#TV5 Monde Asia#https://op-group1-densxvisionhd-1.dens.tv/h/h121/index.m3u8
+Dens#tvOne#https://op-group1-densxvisionhd-1.dens.tv/h/h40/index.m3u8
+Dens#TVRI#https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
+Dens#TVRI Sport#https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8
+
 Transvision#ABC Australia#http://103.58.160.157:8278/720-ABCAUSTRALIA/playlist.m3u8
 Transvision#Al Jazeera#http://103.58.160.157:8278/720-ALJAZEERA/playlist.m3u8
 Transvision#ANTV#http://103.58.160.157:8278/720-ANTV/playlist.m3u8
@@ -65,3 +100,27 @@ Transvision#TVRI Sport#http://103.58.160.157:8278/720-TVRISPORT/playlist.m3u8
 Transvision#Warner#http://103.58.160.157:8278/720-WARNERTV/playlist.m3u8
 Transvision#Wion#http://103.58.160.157:8278/720-WION/playlist.m3u8
 Transvision#Xing Kong#http://103.58.160.157:8278/720-XINGKONG/playlist.m3u8
+
+Vidio#ANTV#https://bostv.maling.pl/782.m3u8
+Vidio#TVRI#https://bostv.maling.pl/6441.m3u8
+Vidio#Metro TV#https://bostv.maling.pl/777.m3u8
+Vidio#TVONE#https://bostv.maling.pl/783.m3u8
+Vidio#Kompas TV#https://bostv.maling.pl/874.m3u8
+Vidio#RTV#https://bostv.maling.pl/1561.m3u8
+Vidio#Nusantara TV#https://bostv.maling.pl/7432.m3u8
+Vidio#Garuda TV#https://bostv.maling.pl/18162.m3u8
+Vidio#BTV#https://bostv.maling.pl/6165.m3u8
+Vidio#Mentari TV#https://bostv.maling.pl/8237.m3u8
+Vidio#MDTV#https://bostv.maling.pl/875.m3u8
+Vidio#JTV#https://bostv.maling.pl/9713.m3u8
+Vidio#Jak TV#https://bostv.maling.pl/5415.m3u8
+Vidio#DAAI TV#https://bostv.maling.pl/6482.m3u8
+Vidio#Sin Po TV#https://bostv.maling.pl/19046.m3u8
+Vidio#Ajwa TV#https://bostv.maling.pl/7464.m3u8
+Vidio#Musica#https://bostv.maling.pl/7619.m3u8
+Vidio#Al Jazeera#https://bostv.maling.pl/6410.m3u8
+Vidio#Arirang#https://bostv.maling.pl/6784.m3u8
+Vidio#ABC Australia#https://bostv.maling.pl/7150.m3u8
+Vidio#Euronews#https://bostv.maling.pl/6412.m3u8
+Vidio#DW English#https://bostv.maling.pl/5075.m3u8
+Vidio#Africanews#https://bostv.maling.pl/12784.m3u8
