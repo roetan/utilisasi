@@ -1,2 +1,67 @@
-News#Berita Satu#https://op-group1-densxvisionhd-1.dens.tv/h/h209/index.m3u8
-Entertainment#Channel Jowo#https://op-group1-densxvisionhd-1.dens.tv/h/h77/index2.m3u8
+Transvision#ABC Australia#http://103.58.160.157:8278/720-ABCAUSTRALIA/playlist.m3u8
+Transvision#Al Jazeera#http://103.58.160.157:8278/720-ALJAZEERA/playlist.m3u8
+Transvision#ANTV#http://103.58.160.157:8278/720-ANTV/playlist.m3u8
+Transvision#Arirang#http://103.58.160.157:8278/720-ARIRANG/playlist.m3u8
+Transvision#AXN#http://103.58.160.157:8278/720-AXN/playlist.m3u8
+Transvision#BaliTV#http://103.58.160.157:8278/720-BALITV/playlist.m3u8
+Transvision#Berita Satu#http://103.58.160.157:8278/720-BERITASATU/playlist.m3u8
+Transvision#Cartoonito#http://103.58.160.157:8278/720-CARTOONITO/playlist.m3u8
+Transvision#Cartoon Network#http://103.58.160.157:8278/720-CARTOONNETWORK/playlist.m3u8
+Transvision#Cartoon Premium#http://103.58.160.157:8278/720-CARTOONPREMIUM/playlist.m3u8
+Transvision#CCTV4#http://103.58.160.157:8278/720-CCTV4/playlist.m3u8
+Transvision#Celestial Movies#http://103.58.160.157:8278/720-CELESTIALMOVIES/playlist.m3u8
+Transvision#CGTN#http://103.58.160.157:8278/720-CGTN/playlist.m3u8
+Transvision#CGTN Documentary#http://103.58.160.157:8278/720-CGTNDOC/playlist.m3u8
+Transvision#CINEMAX#http://103.58.160.157:8278/720-CINEMAX/playlist.m3u8
+Transvision#CinemaWorld#http://103.58.160.157:8278/720-CINEMAWORLD/playlist.m3u8
+Transvision#CNA#http://103.58.160.157:8278/720-CNA/playlist.m3u8
+Transvision#CNBC Indonesia#http://103.58.160.157:8278/720-CNBCIND/playlist.m3u8
+Transvision#CNN Indonesia#http://103.58.160.157:8278/720-CNNINDONESIA/playlist.m3u8
+Transvision#Cooking TV#http://103.58.160.157:8278/720-COOKINGTV/playlist.m3u8
+Transvision#DAAI TV#http://103.58.160.157:8278/720-DAAITV/playlist.m3u8
+Transvision#DW English#http://103.58.160.157:8278/720-DWENGLISH/playlist.m3u8
+Transvision#Eat N Go#http://103.58.160.157:8278/720-EATNGO/playlist.m3u8
+Transvision#Euronews#http://103.58.160.157:8278/720-EURONEWS/playlist.m3u8
+Transvision#Fashion TV#http://103.58.160.157:8278/720-FASHIONTV/playlist.m3u8
+Transvision#Fight Sports#http://103.58.160.157:8278/720-FIGHTSPORTS/playlist.m3u8
+Transvision#France24#http://103.58.160.157:8278/720-FRANCE24/playlist.m3u8
+Transvision#Gaming TV#http://103.58.160.157:8278/720-GAMINGTV/playlist.m3u8
+Transvision#GTV#http://103.58.160.157:8278/720-GLOBALTV/playlist.m3u8
+Transvision#Golf#http://103.58.160.157:8278/720-GOLF/playlist.m3u8
+Transvision#HBO#http://103.58.160.157:8278/720-HBO/playlist.m3u8
+Transvision#HBO Family#http://103.58.160.157:8278/720-HBOFAMILY/playlist.m3u8
+Transvision#HBO Hits#http://103.58.160.157:8278/720-HBOHITS/playlist.m3u8
+Transvision#HBO Signature#http://103.58.160.157:8278/720-HBOSIG/playlist.m3u8
+Transvision#Hunan#http://103.58.160.157:8278/720-HUNAN/playlist.m3u8
+Transvision#Indosiar#http://103.58.160.157:8278/720-INDOSIAR/playlist.m3u8
+Transvision#Insert#http://103.58.160.157:8278/720-INSERT/playlist.m3u8
+Transvision#Jak TV#http://103.58.160.157:8278/720-JAKTV/playlist.m3u8
+Transvision#KBS World#http://103.58.160.157:8278/720-KBSWORLD/playlist.m3u8
+Transvision#Knowledge+#http://103.58.160.157:8278/720-KNOWLEDGE/playlist.m3u8
+Transvision#Kompas TV#http://103.58.160.157:8278/720-KOMPASTV/playlist.m3u8
+Transvision#Metro TV#http://103.58.160.157:8278/720-METROTV/playlist.m3u8
+Transvision#MNCTV#http://103.58.160.157:8278/720-MNCTV/playlist.m3u8
+Transvision#Musik Indonesia#http://103.58.160.157:8278/720-MUSIKINDONESIA/playlist.m3u8
+Transvision#MDTV#http://103.58.160.157:8278/720-NET/playlist.m3u8
+Transvision#NHK Premium#http://103.58.160.157:8278/720-NHKPREMIUM/playlist.m3u8
+Transvision#NHK World#http://103.58.160.157:8278/720-NHKWORLD/playlist.m3u8
+Transvision#One TV#http://103.58.160.157:8278/720-ONETV/playlist.m3u8
+Transvision#RTV#http://103.58.160.157:8278/720-RAJAWALITV/playlist.m3u8
+Transvision#RCTI#http://103.58.160.157:8278/720-RCTI/playlist.m3u8
+Transvision#Rodja TV#http://103.58.160.157:8278/720-RODJATV/playlist.m3u8
+Transvision#Russia Today#http://103.58.160.157:8278/720-RUSIATODAY/playlist.m3u8
+Transvision#SCTV#http://103.58.160.157:8278/720-SCTV/playlist.m3u8
+Transvision#Speed TV#http://103.58.160.157:8278/720-SPEEDTV/playlist.m3u8
+Transvision#Sports TV#http://103.58.160.157:8278/720-SPORTSTV/playlist.m3u8
+Transvision#Thrill#http://103.58.160.157:8278/720-THRILL/playlist.m3u8
+Transvision#Trans 7#http://103.58.160.157:8278/720-TRANS7/playlist.m3u8
+Transvision#Trans TV#http://103.58.160.157:8278/720-TRANSTV/playlist.m3u8
+Transvision#TV5 Monde#http://103.58.160.157:8278/720-TV5MONDE/playlist.m3u8
+Transvision#TVN#http://103.58.160.157:8278/720-TVN/playlist.m3u8
+Transvision#TVN Movies#http://103.58.160.157:8278/720-TVNMOVIES/playlist.m3u8
+Transvision#TVONE#http://103.58.160.157:8278/720-TVONE/playlist.m3u8
+Transvision#TVRI#http://103.58.160.157:8278/720-TVRI/playlist.m3u8
+Transvision#TVRI Sport#http://103.58.160.157:8278/720-TVRISPORT/playlist.m3u8
+Transvision#Warner#http://103.58.160.157:8278/720-WARNERTV/playlist.m3u8
+Transvision#Wion#http://103.58.160.157:8278/720-WION/playlist.m3u8
+Transvision#Xing Kong#http://103.58.160.157:8278/720-XINGKONG/playlist.m3u8
