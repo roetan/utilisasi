@@ -1,164 +1,105 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
-    <title>-</title>
+    <title>Player</title>
     <meta name="referrer" content="no-referrer">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta content="webkit" name="renderer">
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0 ,maximum-scale=1.0, user-scalable=no"
-        name="viewport">
-    <meta content="true" name="x5-fullscreen">
-    <meta content="app" name="x5-page-mode">
-    <meta content="yes" name="full-screen">
-    <meta content="application" name="browsermode">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
 
-    <!-- Plyr CSS -->
+    <!-- Plyr -->
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-    <!-- HLS.js -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
-    <!-- Plyr JS -->
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-</head>
 
-<style>
-    :root {
-        --plyr-color-main: #00b2ff;
-    }
-
-    body,
-    html {
-        margin: 0;
-        height: 100%;
-        background: black;
-    }
-
-    .dplayer-wrap,
-    .video-wrapper {
-        width: 100%;
-        height: 100vh;
-    }
-
-    video {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-        background: black;
-    }
-
-    @media (max-width: 760px) {
-        .dplayer-wrap {
-            width: 100%;
-            height: 100vh;
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            background: black;
+            overflow: hidden;
         }
 
         .video-wrapper {
-            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
         video {
-            height: 100vh;
-        }
-
-        .video-wrapper .plyr {
-            max-height: 100%;
             width: 100%;
+            height: 100%;
+            object-fit: cover; /* 🔥 ini yang bikin full memenuhi area */
+            background: black;
         }
-    }
 
-    .sss-pay-btn {
-        display: inline-block;
-        font-weight: 400;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        -ms-touch-action: manipulation;
-        touch-action: manipulation;
-        cursor: pointer;
-        background-image: none;
-        border: 1px solid transparent;
-        padding: 6px 12px;
-        font-size: 14px;
-        line-height: 1.42857143;
-        border-radius: 4px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        background: #F94B00;
-        opacity: 0.85;
-        color: white;
-        margin: 5px;
-        text-decoration: none !important;
-    }
-</style>
+        /* Plyr override biar ikut full */
+        .plyr {
+            height: 100%;
+        }
+
+        .plyr__video-wrapper {
+            height: 100%;
+        }
+
+        .plyr video {
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
 
 <body>
-    <div class="dplayer-wrap">
-        <div class="video-wrapper">
-            <video id="player" controls playsinline preload="auto">
-                <source src="" type="application/x-mpegURL" />
-            </video>
-        </div>
-    </div>
 
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const url = params.get('url');
+<div class="video-wrapper">
+    <video id="player" controls playsinline></video>
+</div>
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const video = document.getElementById('player');
-            let hls = null;
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const url = params.get('url');
 
-            if (Hls.isSupported()) {
-                hls = new Hls({
-                    enableWorker: true,
-                    liveSyncDurationCount: 3,
-                    liveMaxLatencyDurationCount: 10,
-                });
+    const video = document.getElementById('player');
 
-                hls.loadSource(url);
-                hls.attachMedia(video);
+    let hls;
 
-                hls.on(Hls.Events.ERROR, (event, data) => {
-                    if (data.fatal) {
-                        if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-                            hls.startLoad();
-                        } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
-                            hls.recoverMediaError();
-                        }
-                    }
-                });
-            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                video.src = url;
-            }
+    function startVideo() {
+        if (Hls.isSupported()) {
+            hls = new Hls();
+            hls.loadSource(url);
+            hls.attachMedia(video);
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = url;
+        }
+    }
 
-            // 初始化 Plyr
-            const player = new Plyr(video, {
-                controls: [
-                    'play-large',
-                    'play',
-                    'progress',
-                    'current-time',
-                    'mute',
-                    'volume',
-                    'settings',
-                    'pip',
-                    'fullscreen'
-                ],
-            });
+    document.addEventListener('DOMContentLoaded', () => {
 
-            // 自动播放
-            player.on('ready', () => {
-                player.play().catch(() => {
-                    console.log('自动播放被阻止，需要用户手动点击播放');
-                });
-            });
+        startVideo();
+
+        const player = new Plyr(video, {
+            controls: [
+                'play-large',
+                'play',
+                'progress',
+                'current-time',
+                'mute',
+                'volume',
+                'settings',
+                'pip',
+                'fullscreen'
+            ]
         });
-    </script>
-</body>
 
+        // autoplay (kalau diizinkan browser)
+        player.on('ready', () => {
+            player.play().catch(() => {});
+        });
+
+    });
+</script>
+
+</body>
 </html>
