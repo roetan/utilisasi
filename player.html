@@ -18,28 +18,37 @@ html, body {
     overflow: hidden;
 }
 
-/* 🔥 container mengikuti tinggi browser */
+/* 🔥 container full layar */
 .video-wrapper {
     position: fixed;
-    inset: 0; /* top:0 right:0 bottom:0 left:0 */
+    inset: 0;
     display: flex;
-}
-
-/* 🔥 video FULL COVER tapi tetap ikut container */
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* inti utama */
+    align-items: center;
+    justify-content: center;
     background: black;
 }
 
-/* Plyr fix supaya ikut full */
+/* 🔥 video responsif */
+video {
+    width: auto;           /* 🔥 penting: biar responsif */
+    height: 100vh;         /* ikuti tinggi browser */
+    max-width: 100%;       /* jangan melewati layar */
+    object-fit: cover;     /* cover penuh tanpa black bar */
+    background: black;
+}
+
+/* Plyr fix */
 .plyr,
 .plyr__video-wrapper {
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .plyr video {
+    height: 100%;
+    width: auto;
     object-fit: cover;
 }
 </style>
