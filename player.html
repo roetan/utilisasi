@@ -34,38 +34,49 @@
         padding: 0;
         margin: 0;
         background-color: #0d0c0c;
+        height: 100%;
     }
 
     .dplayer-wrap {
-        width: 1200px;
-        margin: 0 auto;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .video-wrapper {
         width: 100%;
-        height: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    video {
+        width: 100%;
+        height: 100vh;
+        object-fit: contain;
+        background: black;
     }
 
     @media (max-width: 760px) {
         .dplayer-wrap {
-            width: 360px;
-            margin: 0 auto;
+            width: 100%;
+            height: 100vh;
         }
 
         .video-wrapper {
-            height: calc(100vh - 180px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            height: 100vh;
+        }
+
+        video {
+            height: 100vh;
         }
 
         .video-wrapper .plyr {
             max-height: 100%;
             width: 100%;
-        }
-
-        .tools-box {
-            flex-direction: column-reverse;
         }
     }
 
