@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>88 看球播放器</title>
+    <meta name="referrer" content="no-referrer">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="webkit" name="renderer">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0 ,maximum-scale=1.0, user-scalable=no"
+        name="viewport">
+    <meta content="true" name="x5-fullscreen">
+    <meta content="app" name="x5-page-mode">
+    <meta content="yes" name="full-screen">
+    <meta content="application" name="browsermode">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <!-- HLS.js -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
+    <!-- Plyr JS -->
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+</head>
+
+<style>
+    :root {
+        --plyr-color-main: #00b2ff;
+    }
+
+    body,
+    html {
+        padding: 0;
+        margin: 0;
+        background-color: #0d0c0c;
+    }
+
+    .dplayer-wrap {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .video-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 760px) {
+        .dplayer-wrap {
+            width: 360px;
+            margin: 0 auto;
+        }
+
+        .video-wrapper {
+            height: calc(100vh - 180px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-wrapper .plyr {
+            max-height: 100%;
+            width: 100%;
+        }
+
+        .tools-box {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .sss-pay-btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background: #F94B00;
+        opacity: 0.85;
+        color: white;
+        margin: 5px;
+        text-decoration: none !important;
+    }
+</style>
+
+<body>
+    <div class="dplayer-wrap">
+        <div class="video-wrapper">
+            <video id="player" controls playsinline preload="auto">
+                <source src="" type="application/x-mpegURL" />
+            </video>
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const url = params.get('url');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const video = document.getElementById('player');
+            let hls = null;
+
+            if (Hls.isSupported()) {
+                hls = new Hls({
+                    enableWorker: true,
+                    liveSyncDurationCount: 3,
+                    liveMaxLatencyDurationCount: 10,
+                });
+
+                hls.loadSource(url);
+                hls.attachMedia(video);
+
+                hls.on(Hls.Events.ERROR, (event, data) => {
+                    if (data.fatal) {
+                        if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+                            hls.startLoad();
+                        } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+                            hls.recoverMediaError();
+                        }
+                    }
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = url;
+            }
+
+            // 初始化 Plyr
+            const player = new Plyr(video, {
+                controls: [
+                    'play-large',
+                    'play',
+                    'progress',
+                    'current-time',
+                    'mute',
+                    'volume',
+                    'settings',
+                    'pip',
+                    'fullscreen'
+                ],
+            });
+
+            // 自动播放
+            player.on('ready', () => {
+                player.play().catch(() => {
+                    console.log('自动播放被阻止，需要用户手动点击播放');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
