@@ -101,26 +101,26 @@ Transvision#Warner#http://103.58.160.157:8278/720-WARNERTV/playlist.m3u8
 Transvision#Wion#http://103.58.160.157:8278/720-WION/playlist.m3u8
 Transvision#Xing Kong#http://103.58.160.157:8278/720-XINGKONG/playlist.m3u8
 
-Vidio#ANTV#https://bostv.maling.pl/782.m3u8
-Vidio#TVRI#https://bostv.maling.pl/6441.m3u8
-Vidio#Metro TV#https://bostv.maling.pl/777.m3u8
-Vidio#TVONE#https://bostv.maling.pl/783.m3u8
-Vidio#Kompas TV#https://bostv.maling.pl/874.m3u8
-Vidio#RTV#https://bostv.maling.pl/1561.m3u8
-Vidio#Nusantara TV#https://bostv.maling.pl/7432.m3u8
-Vidio#Garuda TV#https://bostv.maling.pl/18162.m3u8
-Vidio#BTV#https://bostv.maling.pl/6165.m3u8
-Vidio#Mentari TV#https://bostv.maling.pl/8237.m3u8
-Vidio#MDTV#https://bostv.maling.pl/875.m3u8
-Vidio#JTV#https://bostv.maling.pl/9713.m3u8
-Vidio#Jak TV#https://bostv.maling.pl/5415.m3u8
-Vidio#DAAI TV#https://bostv.maling.pl/6482.m3u8
-Vidio#Sin Po TV#https://bostv.maling.pl/19046.m3u8
-Vidio#Ajwa TV#https://bostv.maling.pl/7464.m3u8
-Vidio#Musica#https://bostv.maling.pl/7619.m3u8
-Vidio#Al Jazeera#https://bostv.maling.pl/6410.m3u8
-Vidio#Arirang#https://bostv.maling.pl/6784.m3u8
 Vidio#ABC Australia#https://bostv.maling.pl/7150.m3u8
-Vidio#Euronews#https://bostv.maling.pl/6412.m3u8
-Vidio#DW English#https://bostv.maling.pl/5075.m3u8
 Vidio#Africanews#https://bostv.maling.pl/12784.m3u8
+Vidio#Ajwa TV#https://bostv.maling.pl/7464.m3u8
+Vidio#Al Jazeera#https://bostv.maling.pl/6410.m3u8
+Vidio#ANTV#https://bostv.maling.pl/782.m3u8
+Vidio#Arirang#https://bostv.maling.pl/6784.m3u8
+Vidio#BTV#https://bostv.maling.pl/6165.m3u8
+Vidio#DAAI TV#https://bostv.maling.pl/6482.m3u8
+Vidio#DW English#https://bostv.maling.pl/5075.m3u8
+Vidio#Euronews#https://bostv.maling.pl/6412.m3u8
+Vidio#Garuda TV#https://bostv.maling.pl/18162.m3u8
+Vidio#Jak TV#https://bostv.maling.pl/5415.m3u8
+Vidio#JTV#https://bostv.maling.pl/9713.m3u8
+Vidio#Kompas TV#https://bostv.maling.pl/874.m3u8
+Vidio#MDTV#https://bostv.maling.pl/875.m3u8
+Vidio#Mentari TV#https://bostv.maling.pl/8237.m3u8
+Vidio#Metro TV#https://bostv.maling.pl/777.m3u8
+Vidio#Musica#https://bostv.maling.pl/7619.m3u8
+Vidio#Nusantara TV#https://bostv.maling.pl/7432.m3u8
+Vidio#RTV#https://bostv.maling.pl/1561.m3u8
+Vidio#Sin Po TV#https://bostv.maling.pl/19046.m3u8
+Vidio#TVONE#https://bostv.maling.pl/783.m3u8
+Vidio#TVRI#https://bostv.maling.pl/6441.m3u8
