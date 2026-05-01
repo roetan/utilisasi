@@ -2,60 +2,24 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Player HLS + DASH</title>
+<title>Player HLS + DASH (Shaka)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Plyr CSS -->
 <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
-<!-- HLS.js & DASH.js -->
+<!-- Shaka Player -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.5/shaka-player.compiled.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
-<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
-
-<!-- Plyr JS -->
 <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 
 <style>
-html, body {
-    margin: 0;
-    height: 100%;
-    background: black;
-    overflow: hidden;
-}
-
-.video-wrapper {
-    position: fixed;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
-}
-
-video {
-    width: auto;
-    height: 100vh;
-    max-width: 100%;
-    object-fit: cover;
-    background: black;
-}
-
-.plyr,
-.plyr__video-wrapper {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.plyr video {
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-}
+html, body { margin:0; height:100%; background:black; overflow:hidden; }
+.video-wrapper { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:black; }
+video { width:auto; height:100vh; max-width:100%; object-fit:cover; background:black; }
+.plyr, .plyr__video-wrapper { height:100%; display:flex; align-items:center; justify-content:center; }
+.plyr video { height:100%; width:auto; object-fit:cover; }
 </style>
 </head>
-
 <body>
 
 <div class="video-wrapper">
@@ -80,36 +44,29 @@ function initializeVideo(url) {
             video.src = url;
         }
     } else if (url.endsWith('.mpd')) {
-        // DASH
-        const dashPlayer = dashjs.MediaPlayer().create();
-        dashPlayer.initialize(video, url, true);
+        // DASH via Shaka
+        shaka.polyfill.installAll();
+        const shakaPlayer = new shaka.Player(video);
+
+        shakaPlayer.load(url).then(() => {
+            console.log('Shaka Player DASH ready');
+        }).catch(e => {
+            console.error('Shaka Player error', e);
+        });
     } else {
-        // fallback: langsung set src
         video.src = url;
     }
 }
 
-// jalankan
 initializeVideo(url);
 
-// Plyr
 const player = new Plyr(video, {
-    controls: [
-        'play-large',
-        'play',
-        'progress',
-        'current-time',
-        'mute',
-        'volume',
-        'settings',
-        'pip',
-        'fullscreen'
-    ]
+    controls: ['play-large','play','progress','current-time','mute','volume','settings','pip','fullscreen']
 });
 
 player.on('ready', () => {
-    video.muted = true; // agar autoplay bisa jalan di browser
-    video.play().catch(() => {});
+    video.muted = true;
+    video.play().catch(()=>{});
 });
 </script>
 
