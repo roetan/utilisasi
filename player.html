@@ -74,7 +74,7 @@ if (Hls.isSupported()) {
 const player = new Plyr(video);
 
 player.on('ready', () => {
-    video.muted = true;      // wajib untuk autoplay
+    video.muted = true;
     video.play().catch(() => {
         console.log("Autoplay diblokir browser");
     });
