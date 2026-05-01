@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Player</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.5/shaka-player.compiled.js"></script>
+<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+<style>
+html, body {
+    margin:0;
+    height:100%;
+    background:black;
+    overflow:hidden;
+}
+
+.video-wrapper {
+    position:fixed;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+video {
+    width:auto;
+    height:100vh;
+    max-width:100%;
+    object-fit:cover;
+    background:black;
+}
+
+.plyr, .plyr__video-wrapper {
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.plyr video {
+    height:100%;
+    width:auto;
+    object-fit:cover;
+}
+</style>
+</head>
+
+<body>
+
+<div class="video-wrapper">
+    <video id="player" controls playsinline autoplay muted></video>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const rawUrl = params.get('url');
+const video = document.getElementById('player');
+
+function getConnectionProfile() {
+    const c = navigator.connection || {};
+    if (c.saveData) return 'low';
+    if (c.effectiveType === '2g') return 'low';
+    if (c.effectiveType === '3g') return 'medium';
+    return 'high';
+}
+
+function playHLS(url) {
+    if (!Hls.isSupported()) {
+        video.src = url;
+        return;
+    }
+
+    const profile = getConnectionProfile();
+    let startLevel = -1;
+
+    if (profile === 'low') startLevel = 0;
+    else if (profile === 'medium') startLevel = 1;
+
+    const hls = new Hls({
+        capLevelToPlayerSize: true
+    });
+
+    hls.loadSource(url);
+    hls.attachMedia(video);
+
+    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        if (startLevel >= 0) {
+            hls.currentLevel = startLevel;
+        }
+    });
+}
+
+async function playDASH(url, licenseInfo) {
+    try {
+        shaka.polyfill.installAll();
+        const playerDash = new shaka.Player(video);
+
+        const profile = getConnectionProfile();
+        let maxHeight = 1080;
+
+        if (profile === 'low') maxHeight = 360;
+        else if (profile === 'medium') maxHeight = 720;
+
+        let drmConfig = {};
+
+        if (licenseInfo) {
+            if (licenseInfo.includes(':')) {
+                const keys = {};
+                licenseInfo.split(',').forEach(pair => {
+                    const [k, v] = pair.split(':');
+                    if (k && v) keys[k] = v;
+                });
+                drmConfig = { clearKeys: keys };
+            } else {
+                drmConfig = {
+                    servers: {
+                        'com.widevine.alpha': licenseInfo
+                    }
+                };
+            }
+        }
+
+        playerDash.configure({
+            drm: drmConfig,
+            abr: { enabled: true },
+            restrictions: { maxHeight: maxHeight },
+            streaming: {
+                bufferingGoal: 15,
+                rebufferingGoal: 2
+            }
+        });
+
+        await playerDash.load(url);
+
+    } catch (e) {
+        console.warn('DASH gagal, fallback ke HLS');
+
+        const fallback = url.replace('.mpd', '.m3u8');
+        if (fallback !== url) {
+            playHLS(fallback);
+        }
+    }
+}
+
+function init(rawUrl) {
+    if (!rawUrl) return;
+
+    let mediaUrl = rawUrl;
+    let licenseInfo = null;
+
+    if (rawUrl.includes('!!')) {
+        [mediaUrl, licenseInfo] = rawUrl.split('!!');
+    }
+
+    if (mediaUrl.endsWith('.m3u8')) {
+        playHLS(mediaUrl);
+
+    } else if (mediaUrl.endsWith('.mpd')) {
+        playDASH(mediaUrl, licenseInfo);
+
+    } else {
+        video.src = mediaUrl;
+    }
+}
+
+init(rawUrl);
+
+// Plyr UI
+const player = new Plyr(video);
+
+player.on('ready', () => {
+    video.muted = true;
+    video.play().catch(()=>{});
+});
+</script>
+
+</body>
+</html>
