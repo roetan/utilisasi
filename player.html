@@ -18,7 +18,6 @@ html, body {
     overflow: hidden;
 }
 
-/* 🔥 container full layar */
 .video-wrapper {
     position: fixed;
     inset: 0;
@@ -28,16 +27,14 @@ html, body {
     background: black;
 }
 
-/* 🔥 video responsif */
 video {
-    width: auto;           /* 🔥 penting: biar responsif */
-    height: 100vh;         /* ikuti tinggi browser */
-    max-width: 100%;       /* jangan melewati layar */
-    object-fit: cover;     /* cover penuh tanpa black bar */
+    height: 100vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
     background: black;
 }
 
-/* Plyr fix */
 .plyr,
 .plyr__video-wrapper {
     height: 100%;
