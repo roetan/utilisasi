@@ -33,6 +33,41 @@ Dens#tvOne#https://op-group1-densxvisionhd-1.dens.tv/h/h40/index.m3u8
 Dens#TVRI#https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8
 Dens#TVRI Sport#https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8
 
+Sport#ACISport#https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8_output_0.m3u8?session=PmzCRLgZpgmP3ygroDqj7A
+Sport#Bein Sports ES Xtra#https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
+Sport#Bein Sports Turkey 1#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs1.m3u8
+Sport#Bein Sports Turkey 2#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs2.m3u8
+Sport#Bein Sports Turkey 3#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs3.m3u8
+Sport#Bein Sports Turkey 4#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs4.m3u8
+Sport#Bein Sports Turkey 5#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebs5.m3u8
+Sport#Bein Sports Turkey MAXXXX#https://andro.okan11gote12sokan.cfd/checklist/androstreamlivebsm1.m3u8
+Sport#Bein SPorts Xtra#https://bein-xtra-xumo.amagi.tv/playlistR720P.m3u8
+Sport#DAZN Combat#https://rakutenaa-dazn-combat-rakuten-kcybm.amagi.tv/ts-eu-w1-n2/playlist/rakutenAA-dazn-combat-rakuten/cb513d16796c6c9099ce2164d8d320dd844c3bdd0b61cb3071aa448f1298410ddafbb2d3932fff695c811fd5716d340f5b63c009967a05ccce38ee5b35781e6a9a81a20c8cca4956adda0f2b2ab37b1e50ee784c9270057dc1a64b5cdc73e53b414ab00d380e6b8bbe44ae7656969d0b8a292896fcdb616b600e0ecd0959ecf256a0a9e8092799568289e0dcc105779ef650f0ad42efdf8a0edd1ad754ce2eafe393ab48c44fb4bb57d814eb3573364ae32a840bfbeb58b8dd917c3589335a2e85e6e2d1f1dc6b46ee654652fff4deb370b5739cca4d090746db60f82fe4d0e4cbd30fa1e748a65f82ff082d18b7cd5a2e0da1eea198ef34094d079192c4d2697595fa153712873d986a1c319ef9c40397833ba2f672d5fa394678f7984bcdc9e9c3f7e6d911dc37dc9da5cc640c1e2a4425835ea9952289798c28f89f43701c6b4dbf9f53cb9e960f643b01d6f22bbe792cb0d58f8cc81d7b9b30693dc654990a55229c4e29168200f6803560852770f41334e95d338f5abcf56cc2aed5e1092ca69ca066fa7ce4a105c2fc61f83e6ab963130589f12354fc96f50c791597d5e65db942d71408/136/1280x720_2657600/index.m3u8
+Sport#Game TV#https://a-cdn.klowdtv.com/live2/fntsy_720p/chunks.m3u8
+Sport#Gaora Sports#http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs17
+Sport#Golf TV#https://aegis-cloudfront-1.tubi.video/9c59800e-fa9a-4539-b8e5-5769918e7c5a/playlist.m3u8
+Sport#IDMAN TV#https://str2.yodacdn.net/idman_300_to_small/tracks-v1a1/mono.m3u8
+Sport#JSports 1#http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs18
+Sport#JSports 2#http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs19
+Sport#JSports 3#http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs21
+Sport#JSports 4#http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs22
+Sport#Motorsport 1#https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg02873-kravemedia-mtrspt1-sportstribal/playlist.m3u8
+Sport#NBA TV#http://84.17.50.102/nbatv/index.m3u8
+Sport#Racing TV#https://racingvic-i.akamaized.net/hls/live/598695/racingvic/index_1.m3u8
+Sport#Rally TV#https://dms.redbull.tv/v5/destination/rallytv/07f960dc-fd36-466c-971f-64a597518b83/personal_computer/http/us/en_US/playlist.m3u8
+Sport#RedBull TV#https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+Sport#SCTV22#https://liveh34.vtvprime.vn/hls/SCTV22/index.m3u8
+Sport#Sporsmart 1#https://andro.2385437.xyz/checklist/androstreamlivesm1.m3u8
+Sport#Sporsmart 2#https://andro.2385437.xyz/checklist/androstreamlivesm2.m3u8
+Sport#Sport Italia#https://amg01370-italiansportcom-sportitalia-rakuten-3hmdb.amagi.tv/hls/amagi_hls_data_rakutenAA-sportitalia-rakuten/CDN/848x480_1205600/chunklist.m3u8
+Sport#Sport Live Plus#https://nl.utako.moe/sport_live_plus/index.m3u8
+Sport#Sportdigital Fussball Free#https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/2d920251-818e-11eb-908d-533d39655269/0/master.m3u8?country=CH&vendor=samsung
+Sport#Sports Grid#https://sportsgrid-samsungus.amagi.tv/playlist720pl.m3u8
+Sport#Strongman Champions League#https://rightsboosterltd-scl-1-nl.samsung.wurl.tv/playlist.m3u8
+Sport#Tennis Channel#https://tennischannel-int-samsunguk.amagi.tv/playlist540_p.m3u8
+Sport#Wowow Live#https://nl.utako.moe/wlive/index.m3u8
+Sport#X Games#https://jmp2.uk/rok-0128b5f756acf1e1c488509fd76b0a61.m3u8
+
 Transvision#ABC Australia#http://103.58.160.157:8278/720-ABCAUSTRALIA/playlist.m3u8
 Transvision#Al Jazeera#http://103.58.160.157:8278/720-ALJAZEERA/playlist.m3u8
 Transvision#ANTV#http://103.58.160.157:8278/720-ANTV/playlist.m3u8
