@@ -2,22 +2,54 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Player HLS + DASH (Shaka)</title>
+<title>Player</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Plyr CSS -->
 <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
-<!-- Shaka Player -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.5/shaka-player.compiled.js"></script>
+<!-- HLS.js & Shaka Player -->
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.5/shaka-player.compiled.js"></script>
 <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 
 <style>
-html, body { margin:0; height:100%; background:black; overflow:hidden; }
-.video-wrapper { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:black; }
-video { width:auto; height:100vh; max-width:100%; object-fit:cover; background:black; }
-.plyr, .plyr__video-wrapper { height:100%; display:flex; align-items:center; justify-content:center; }
-.plyr video { height:100%; width:auto; object-fit:cover; }
+html, body {
+    margin:0;
+    height:100%;
+    background:black;
+    overflow:hidden;
+}
+
+.video-wrapper {
+    position:fixed;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:black;
+}
+
+video {
+    width:auto;
+    height:100vh;
+    max-width:100%;
+    object-fit:cover;
+    background:black;
+}
+
+.plyr, .plyr__video-wrapper {
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.plyr video {
+    height:100%;
+    width:auto;
+    object-fit:cover;
+}
 </style>
 </head>
 <body>
@@ -27,45 +59,74 @@ video { width:auto; height:100vh; max-width:100%; object-fit:cover; background:b
 </div>
 
 <script>
+// Ambil parameter URL: ?url=MPD/HLS_URL!!LICENSE
 const params = new URLSearchParams(window.location.search);
-const url = params.get('url');
+const rawUrl = params.get('url');  // contoh: MPD_URL!!LICENSE
+
 const video = document.getElementById('player');
 
-function initializeVideo(url) {
-    if (!url) return;
+function initializeVideo(rawUrl) {
+    if (!rawUrl) return;
 
-    if (url.endsWith('.m3u8')) {
+    // Split URL dan License
+    let [mediaUrl, licenseInfo] = rawUrl.split('!!');
+
+    if (mediaUrl.endsWith('.m3u8')) {
         // HLS
         if (Hls.isSupported()) {
             const hls = new Hls();
-            hls.loadSource(url);
+            hls.loadSource(mediaUrl);
             hls.attachMedia(video);
         } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = url;
+            video.src = mediaUrl;
         }
-    } else if (url.endsWith('.mpd')) {
-        // DASH via Shaka
+    } else if (mediaUrl.endsWith('.mpd')) {
+        // DASH / DRM via Shaka
         shaka.polyfill.installAll();
         const shakaPlayer = new shaka.Player(video);
 
-        shakaPlayer.load(url).then(() => {
-            console.log('Shaka Player DASH ready');
-        }).catch(e => {
-            console.error('Shaka Player error', e);
-        });
+        let drmConfig = {};
+
+        if (licenseInfo) {
+            if (licenseInfo.includes(':')) {
+                // ClearKey format: keyId:key[,keyId:key]
+                const keys = {};
+                licenseInfo.split(',').forEach(pair => {
+                    const [keyId, key] = pair.split(':');
+                    keys[keyId] = key;
+                });
+                drmConfig = { clearKeys: keys };
+            } else {
+                // Widevine URL license
+                drmConfig = { servers: { 'com.widevine.alpha': licenseInfo } };
+            }
+        }
+
+        shakaPlayer.configure({ drm: drmConfig });
+
+        shakaPlayer.load(mediaUrl)
+            .then(() => console.log('DASH/DRM ready'))
+            .catch(e => console.error('Error loading DASH/DRM', e));
+
     } else {
-        video.src = url;
+        // fallback
+        video.src = mediaUrl;
     }
 }
 
-initializeVideo(url);
+// Jalankan
+initializeVideo(rawUrl);
 
+// Plyr UI
 const player = new Plyr(video, {
-    controls: ['play-large','play','progress','current-time','mute','volume','settings','pip','fullscreen']
+    controls: [
+        'play-large','play','progress','current-time','mute',
+        'volume','settings','pip','fullscreen'
+    ]
 });
 
 player.on('ready', () => {
-    video.muted = true;
+    video.muted = true; // agar autoplay bisa jalan
     video.play().catch(()=>{});
 });
 </script>
