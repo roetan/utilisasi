@@ -13,7 +13,6 @@
 02/05/2026|23:00 COMO VS NAPOLI|https://maling.pl/19404.mpd|https://maling.pl/19404.drm
 02/05/2026|23:30 ALAVES VS ATHLETIC CLUB|https://maling.pl/17875.mpd|https://maling.pl/17875.drm
 02/05/2026|23:30 ALAVES VS ATHLETIC CLUB [ALT]|https://d6m3sfa7e58z5.cloudfront.net/out/v1/cfca527d0f16403396a71b2d3d54c32f/index.mpd|3d756d566ca94e6499518ffb1474d5d0:dbe4ad6803e74739b8f954d23cc58e7b
-
 03/05/2026|01:00 AJAX VS PSV|https://maling.pl/6685.mpd|https://maling.pl/6685.drm
 03/05/2026|01:45 ATALANTA VS GENOA|https://maling.pl/19404.mpd|https://maling.pl/19404.drm
 03/05/2026|02:00 OSASUNA VS BARCELONA|https://maling.pl/17875.mpd|https://maling.pl/17875.drm
