@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+<script>
+// Auto-block script eksternal mencurigakan
+(function() {
+    // Override loadAclib atau fungsi serupa agar tidak jalan
+    window.loadAclib = Promise.resolve();
+    window.runAclib = function(){};
+
+    // Simpan referensi appendChild asli
+    const originalAppend = Document.prototype.appendChild;
+
+    Document.prototype.appendChild = function(element) {
+        // Cek hanya untuk tag SCRIPT eksternal
+        if (element.tagName === 'SCRIPT' && element.src) {
+            const blockedKeywords = [
+                'lolo_',          // nama script iklan yang sebelumnya
+                'pop',            // pop-up
+                'ad',             // iklan
+                'tracking',       // tracking
+                'analytics'       // analytics mencurigakan
+            ];
+
+            // Jika src mengandung kata kunci yang mencurigakan
+            if (blockedKeywords.some(kw => element.src.toLowerCase().includes(kw))) {
+                console.log('Script diblokir otomatis:', element.src);
+                return element; // jangan append script
+            }
+        }
+        return originalAppend.call(this, element); // script lain tetap jalan
+    };
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Player</title>
