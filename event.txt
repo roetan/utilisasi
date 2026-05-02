@@ -1,5 +1,0 @@
-JADWAL 02/05||16:30 WIB CHINA VS JAPAN||https://maling.pl/18249.mpd||https://maling.pl/18249.drm||widevine
-JADWAL 02/05||16:30 WIB INDONESIA VS KOREA||https://maling.pl/18250.mpd||https://maling.pl/18250.drm||widevine
-JADWAL 02/05||15:30 WIB PERSEBAYA VS PSBS BIAK||https://maling.pl/19354.mpd||https://maling.pl/19354.drm||widevine
-JADWAL 02/05||15:30 WIB INDONESIA VS NATUNA||https://d2xz2v5wuvgur6.cloudfront.net/out/v1/997ce8767b604fae9fce05379b3b8b3a/index.mpd||d386001215594043a8995db796ad9e9c:3404792cb4c804902acdc6ca65c1a298||clearkey
-JADWAL 02/05||18:30 WIB SABAH VS PDRM ||https://streaming.cdnx-sportnobar.xyz/live/sd-6MuTN5vdDUzazkDvbo.m3u8
