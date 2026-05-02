@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Player</title>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        height: 100vh;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    .left {
+        flex: 4;
+        padding: 20px;
+        border-right: 1px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    iframe {
+        flex: 1;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .right {
+        flex: 1;
+        background-color: #ffffff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        box-shadow: -2px 0 8px rgba(0,0,0,0.05);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #4CAFFF #f1f1f1;
+    }
+
+    .right::-webkit-scrollbar {
+        width: 8px;
+    }
+    .right::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+    }
+    .right::-webkit-scrollbar-thumb {
+        background-color: #4CAFFF;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 12px 15px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background-color: #4CAFFF;
+        color: white;
+        font-size: 14px;
+        text-align: left;
+        transition: background-color 0.2s, transform 0.1s;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    button:hover {
+        background-color: #3a9cff;
+        transform: translateY(-1px);
+    }
+
+    button:active {
+        background-color: #337ecc;
+        transform: translateY(1px);
+    }
+
+    button.active {
+        background-color: #337ecc; /* warna biru gelap saat aktif */
+    }
+</style>
+</head>
+<body>
+
+    <div class="left">
+        <iframe id="urlView" src=""></iframe>
+    </div>
+
+    <div class="right">
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/bra/br1.php')">1</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/bra/br2.php')">ESPN</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/bra/br3.php')">SPORT TV 3</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/bra/br4.php')">4</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/bra/br5.php')">5</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/bra/br6.php')">ESPN 4</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/hd/hd1.php')">SKY SPORTS MAIN EVENT</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/hd/hd10.php')">ORF 1</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/hd/hd11.php')">BEIN SPORT 1</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/hd/hd2.php')">PREMIER SPORT 2</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/hd/hd3.php')">DAZN 1</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/hd/hd4.php')">12</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/hd/hd5.php')">SKY SPORTS F1</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/hd/hd6.php')">ESPN DEPORTES</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/hd/hd7.php')">DAZN 1</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/hd/hd8.php')">SKY SPORTS F1</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/hd/hd9.php')">LALIGA TV HYPERMOTION</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/pt/eleven1.php')">DAZN 1</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/pt/eleven2.php')">DAZN 2</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/pt/eleven3.php')">DAZN 3</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/pt/sporttv1.php')">SPORT TV 1</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/pt/sporttv2.php')">SPORT TV 2</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/pt/sporttv3.php')">SPORT TV 3</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/pt/sporttv4.php')">SPORT TV 4</button>
+        <button onclick="openURL(this, 'https://v3.sportssonline.click/channels/pt/sporttv5.php')">SPORT TV 5</button>
+    </div>
+
+<script>
+function openURL(button, url) {
+    document.getElementById('urlView').src = url;
+
+    // Hapus class 'active' dari semua tombol
+    const buttons = document.querySelectorAll('.right button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // Tambahkan class 'active' ke tombol yang diklik
+    button.classList.add('active');
+}
+</script>
+
+</body>
+</html>
