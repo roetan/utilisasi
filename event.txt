@@ -1,7 +1,7 @@
-JADWAL 02/05||16:30 WIB CHINA VS JAPAN||https://maling.pl/18249.mpd||https://maling.pl/18249.drm||widevine
-JADWAL 02/05||16:30 WIB INDONESIA VS KOREA||https://maling.pl/18250.mpd||https://maling.pl/18250.drm||widevine
-JADWAL 02/05||19:00 WIB PERSEBAYA VS PSBS BIAK||https://maling.pl/19354.mpd||https://maling.pl/19354.drm||widevine
-JADWAL 02/05||19:00 WIB VILLARREAL VS LEVANTE||https://maling.pl/17875.mpd||https://maling.pl/17875.drm||widevine
-JADWAL 02/05||19:00 WIB VILLARREAL VS LEVANTE||https://d6m3sfa7e58z5.cloudfront.net/out/v1/cfca527d0f16403396a71b2d3d54c32f/index.mpd||3d756d566ca94e6499518ffb1474d5d0:dbe4ad6803e74739b8f954d23cc58e7b||clearkey
-JADWAL 02/05||20:00 WIB UDINESE VS TORINO||https://maling.pl/19404.mpd||https://maling.pl/19404.drm||widevine
-JADWAL 02/05||RCTI||https://d2xz2v5wuvgur6.cloudfront.net/out/v1/997ce8767b604fae9fce05379b3b8b3a/index.mpd||d386001215594043a8995db796ad9e9c:3404792cb4c804902acdc6ca65c1a298||clearkey
+JADWAL 02/05||16:30 WIB CHINA VS JAPAN||https://maling.pl/18249.mpd||https://maling.pl/18249.drm
+JADWAL 02/05||16:30 WIB INDONESIA VS KOREA||https://maling.pl/18250.mpd||https://maling.pl/18250.drm
+JADWAL 02/05||19:00 WIB PERSEBAYA VS PSBS BIAK||https://maling.pl/19354.mpd||https://maling.pl/19354.drm
+JADWAL 02/05||19:00 WIB VILLARREAL VS LEVANTE||https://maling.pl/17875.mpd||https://maling.pl/17875.drm
+JADWAL 02/05||19:00 WIB VILLARREAL VS LEVANTE||https://d6m3sfa7e58z5.cloudfront.net/out/v1/cfca527d0f16403396a71b2d3d54c32f/index.mpd||3d756d566ca94e6499518ffb1474d5d0:dbe4ad6803e74739b8f954d23cc58e7b
+JADWAL 02/05||20:00 WIB UDINESE VS TORINO||https://maling.pl/19404.mpd||https://maling.pl/19404.drm
+JADWAL 02/05||RCTI||https://d2xz2v5wuvgur6.cloudfront.net/out/v1/997ce8767b604fae9fce05379b3b8b3a/index.mpd||d386001215594043a8995db796ad9e9c:3404792cb4c804902acdc6ca65c1a298
