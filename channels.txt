@@ -9,7 +9,7 @@ Bundesliga#20:30 Werder Bremen vs FC Augsburg#https://streaming.cdnx-sportnobar.
 Bundesliga#20:30 TSG Hoffenheim vs VfB Stuttgart#https://streaming.cdnx-sportnobar.xyz/live/sd-6MuT7Y3CpA1E3kg3y7.m3u8
 Bundesliga#20:30 Bayern Munchen vs 1. FC Heidenheim#https://streaming.cdnx-sportnobar.xyz/live/sd-6MuT7Y3CULUurqbkkD.m3u8
 English Premier League#21:00 Newcastle Utd vs Brighton Hove#https://streaming.cdnx-sportnobar.xyz/live/sd-6MuT7Jy138WXpKp3mo.m3u8
-English Premier League#21:00 Wolves vs Sunderland AFC#https://streaming.cdnx-sportnobar.xyz/live/sd-6MuT7Jy1MxtMNmQX1P.m3u8
+English Premier League#21:00 Wolves vs Sunderland AFC#https://hls.livelivelive.space/live/4343369.m3u8?txSecret=737a25f87d7f18353fb9e3ea6724de4d&txTime=1776963459
 English Premier League#21:00 Brentford vs West Ham United#https://streaming.cdnx-sportnobar.xyz/live/sd-6MuT7Jy1sdsbrRH67P.m3u8
 Spanish La Liga#21:15 Valencia vs Atletico Madrid#https://streaming.cdnx-sportnobar.xyz/live/sd-6MuSsYdpeR7Yga68wP.m3u8
 Netherlands Eredivisie#21:30 Utrecht vs NAC Breda#https://streaming.cdnx-sportnobar.xyz/live/sd-6MuT7hpvsZK6ueMNhK.m3u8
